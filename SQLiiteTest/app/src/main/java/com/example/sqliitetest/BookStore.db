@@ -1,0 +1,7 @@
+// 创建一个Book表，表中定义五个属性
+create table Book(
+    id integer primary key autoincrement,
+    author text,
+    price real,
+    pages integer,
+    name text)
