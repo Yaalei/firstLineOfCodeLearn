@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:window="http://schemas.android.com/apk/res-auto">
+    <SplitPairRule
+        window:splitRatio="0.6"
+        window:splitMinWidth="600dp"
+        window:finishPrimaryWithSecondary="true"
+        window:finishSecondaryWithPrimary="true"
+        window:clearTop="true">
+
+        <SplitPairFilter
+            window:primaryActivityName=".embedding.MainActivity"
+            window:secondaryActivityName=".embedding.DetailActivity"/>
+
+        <SplitPairFilter
+            window:primaryActivityName=".embedding.DetailActivity"
+            window:secondaryActivityName=".embedding.AuthorActivity"/>
+
+    </SplitPairRule>
+
+    <SplitPlaceholderRule
+        window:placeholderActivityName=".embedding.SplitActivityPlaceholder"
+        window:splitRatio="0.5"
+        window:splitMinWidth="600dp">
+        <ActivityFilter
+            window:activityName=".embedding.MainActivity"/>
+    </SplitPlaceholderRule>
+</resources>

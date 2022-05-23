@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题："
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入博客标题"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摘要："
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/summery_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入博客摘要"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正文："
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/main_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入博客正文"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/send_blog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="send"
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>

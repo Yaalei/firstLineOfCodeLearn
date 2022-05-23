@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The split configuration for activities. -->
+<resources
+    xmlns:window="http://schemas.android.com/apk/res-auto">
+
+    <!-- Automatically split the following activity pairs. -->
+    <SplitPairRule
+        window:splitRatio="0.5"
+        window:splitMinWidth="600dp"
+        window:clearTop="true"
+        window:finishPrimaryWithSecondary="true"
+        window:finishSecondaryWithPrimary="true">
+
+
+        <SplitPairFilter
+            window:primaryActivityName=".embedding.SplitActivityB"
+            window:secondaryActivityName=".embedding.SplitActivityC"/>
+    </SplitPairRule>
+
+    <SplitPairRule
+        window:splitRatio="0.5"
+        window:splitMinWidth="600dp"
+        window:finishPrimaryWithSecondary="false"
+        window:finishSecondaryWithPrimary="false">
+
+        <SplitPairFilter
+            window:primaryActivityName=".embedding.SplitActivityA"
+            window:secondaryActivityName=".embedding.SplitActivityB"/>
+
+        <SplitPairFilter
+            window:primaryActivityName=".embedding.SplitActivityC"
+            window:secondaryActivityName=".embedding.SplitActivityD"/>
+
+    </SplitPairRule>
+
+
+
+    <!-- Automatically launch a placeholder for the list activity. -->
+    <SplitPlaceholderRule
+        window:placeholderActivityName=".embedding.SplitActivityPlaceholder"
+        window:splitRatio="0.4"
+        window:splitMinWidth="600dp">
+        <ActivityFilter
+            window:activityName=".embedding.SplitListActivity"/>
+    </SplitPlaceholderRule>
+
+    <ActivityRule
+        window:alwaysExpand="true">
+        <ActivityFilter
+            window:activityName=".embedding.SplitActivityE"/>
+    </ActivityRule>
+
+</resources>
